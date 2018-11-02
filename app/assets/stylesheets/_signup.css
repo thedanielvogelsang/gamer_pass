@@ -1,0 +1,10 @@
+
+
+.signup__button {
+	position: sticky;
+	margin: 30px;
+	top: 900px;
+
+	border-radius: 9px;
+	border: 1px solid blue;
+}

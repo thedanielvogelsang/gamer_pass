@@ -1,0 +1,51 @@
+
+
+
+
+.navigation {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 15px;
+	margin: 0 0 0 -10px;
+
+	background-color: #233047;
+	/*border: 1px solid red;*/
+}
+
+.nav-content {
+	margin: 0 60px 0 0;
+	list-style: none;
+}
+
+.navigation__page-link {
+	text-decoration: none;
+	color: white;
+}
+
+.navigation__page-link:hover {
+	color: #577fb3;
+}
+
+.home {
+	position: relative;
+	float: left;
+
+	color: white;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+.home:hover {
+	color: #577fb3;
+}
+
+li {
+	position: relative;
+	float: right;
+	margin: 0 20px 0 20px;
+
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
