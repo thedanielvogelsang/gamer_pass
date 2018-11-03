@@ -1,7 +1,10 @@
 
+body {
+	padding-top: 0px;
+	padding-bottom: 150px;
+}
 
-
-* { 
+* {
 	font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
 	/* available in 200, 200i, 400, 400i, 900, 900i; */
 }

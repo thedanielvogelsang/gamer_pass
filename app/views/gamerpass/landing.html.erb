@@ -25,12 +25,12 @@
     <span class="signup__text">Sign Up</span>
   </div><!-- SIGNUP BUTTON-->
 
+  <div class="signup__backdrop signup__hidden" id="modal-backdrop"></div>
   <div class="signup__modal signup__hidden" id="signup-modal">
-    <div class="hamburger" id="hamburger">
-      <div class="hamburger--top top"></div>
-      <div class="hamburger--middle middle"></div>
-      <div class="hamburger--bottom bottom"></div>
-    </div><!-- HAMBURGER -->
+    <div class="signup__close-x__box" id="close-x">
+      <div class="signup__close-x__down-arm"></div>
+      <div class="signup__close-x__up-arm"></div>
+    </div><!-- CLOSE X BOX -->
     <h3>Complete this form to receive X benefit!</h3>
     <%= render "signupform" %>
   </div><!-- SIGNUP MODAL -->
@@ -40,7 +40,13 @@
     <h2 id="About">About</h2>
     <script src="https://verbingnounssincewhen.com/p/10"></script>
     <h2 id="Contact">Contact</h2>
-    <script src="https://verbingnounssincewhen.com/p/3"></script>
+    <div class="contact__box">
+      <span class="contact__bus-info">Gamer Pass</span><br>
+      <span class="contact__bus-info">P.O. Box 4567</span><br>
+      <span class="contact__bus-info">Chicago, IL </span><br>
+      <span class="contact__bus-info">60601</span><br>
+      <span class="contact__bus-info">[social media links, maybe]</span><br>
+    </div>
 
   </div><!-- CONTENT MAIN -->
 </div><!-- DUMMY BODY -->
