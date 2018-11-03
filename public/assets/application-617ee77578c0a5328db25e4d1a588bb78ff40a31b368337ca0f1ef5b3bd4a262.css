@@ -1,0 +1,276 @@
+
+.modal__formDiv{
+  background-color: #233047;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 84%;
+  overflow-y: scroll;
+  padding-top: 20px;
+}
+
+#modal__form{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+}
+
+#modal__form > label{
+  width: 95%;
+}
+
+#modal__form input{
+  min-width: 100%;
+  color: red;
+  height: 50px;
+  padding: 3px;
+  padding-left: 6px;
+  box-sizing: border-box;
+  margin-bottom: 2px;
+  font-size: 1.1em;
+}
+
+button.signup-btn-submit{
+  width: 180px;
+  height: 50px;
+  border-radius: 5%;
+  background-color: white;
+  color: black;
+  margin-top: 30px;
+}
+
+
+.navigation {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 15px 60px;
+	margin: 0 0 0 -10px;
+
+	background-color: #233047;
+	/*border: 1px solid red;*/
+}
+
+.nav-content {
+	margin: 0 90px 0px 60px;
+	list-style: none;
+}
+
+.navigation__page-link {
+	text-decoration: none;
+	color: white;
+}
+
+.navigation__page-link:hover {
+	color: #577fb3;
+}
+
+.home {
+	position: relative;
+	float: left;
+
+	color: white;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+.home:hover {
+	color: #577fb3;
+}
+
+li {
+	position: relative;
+	float: right;
+	margin: 0 20px 0 20px;
+
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+
+.signup__button {
+	position: sticky;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 80%;
+	max-width: 400px;
+	padding: 10px 0 20px 0;
+
+	border-radius: 9px;
+	background-color: #577fb3;
+	text-align: center;
+	/*border: 1px solid blue;*/
+}
+
+.signup__button:hover {
+	background-color: #a9bee2;
+}
+
+.signup__backdrop {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 110%;
+	margin-left: -10px;
+	background-color: rgba(35, 48, 71, .5)
+;;
+	opacity: 50%;
+}
+
+.signup__modal {
+	position: fixed;
+	top: 15%;
+	/*transform: translateX(50%);*/
+	left: 50%;
+	transform: translateX(-50%);
+
+	padding: 20px;
+	min-width: 60%;
+	max-width: 750px;
+	height: 70%;
+	border-radius: 13px;
+	background-color: white;
+	box-shadow: 3px 3px 3px 3px rgba(35,48,71, .75);
+}
+
+@media (max-width: 750px) {
+
+	.signup__modal {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
+
+.signup__hidden {
+	display: none;
+}
+
+.signup__promise {
+	font-size: 1.6rem;
+	font-weight: 400;
+	font-style: italic;
+	color: #02070d;
+}
+
+.signup__text {
+	font-size: 2.6rem;
+	font-weight: 900;
+	color: white;
+}
+
+.signup__close-x__box {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	border: 1px solid grey;
+	background-color: #a9bee2;
+}
+
+.signup__close-x__box:hover {
+	background-color: #577fb3;
+}
+
+.signup__close-x__down-arm {
+	position: absolute;
+	top: 8px;
+	right: 3px;
+	width: 14px;
+	height: 3px;
+	transform: rotate(45deg);
+	background-color: #233047;
+}
+.signup__close-x__up-arm {
+	position: absolute;
+	top: 8px;
+	right: 3px;
+	width: 14px;
+	height: 3px;
+	transform: rotate(-45deg);
+	background-color: #233047;
+}
+
+body {
+	padding-top: 0px;
+	padding-bottom: 150px;
+}
+
+* {
+	font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
+	/* available in 200, 200i, 400, 400i, 900, 900i; */
+}
+
+p {
+	max-width: 750px;
+}
+
+
+.UVP {
+	text-align: center;
+	font-weight: 200;
+	font-size: 4rem;
+}
+
+.content__box {
+	margin: 0px 0 120px 0;
+}
+
+.content__main {
+	margin: 0 0 0 60px;
+}
+
+.example-screens__box {
+	/*display: flex;*/
+	/*border: 1px solid green;*/
+}
+
+.example-screen {
+	/*position: relative;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	max-width: 90%;
+}
+
+.selling-points__box {
+	text-align: center;
+}
+
+.selling-point {
+	font-size: 3rem;
+	font-weight: 200;
+}
+
+#top{
+	padding-top: 80px;
+}
+
+#About{
+	padding-top: 80px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
