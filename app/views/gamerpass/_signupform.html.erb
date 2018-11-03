@@ -1,0 +1,51 @@
+<div class="modal__formDiv">
+   <%= form_tag "/user-signup", :class => "modal__form", :id => "modal__form" do %>
+    <label>
+      <input
+        classe="signup-input"
+        autoFocus
+        required="true"
+        placeholder="First *"
+        name="user[first]"
+        type="text"
+      />
+    </label>
+    <label>
+    <input
+      classe="signup-input"
+      required="true"
+      name="user[last]"
+      type="text"
+      placeholder="Last *"
+    />
+    </label>
+    <label>
+      <input
+        classe="signup-input"
+        name="user[email]"
+        required="true"
+        placeholder="Email *"
+       />
+    </label>
+    <label>
+      <input
+        class="signup-input full"
+        name="user[phone]"
+        placeholder="Phone"
+       />
+    </label>
+    <label>
+      <input
+        class="signup-input full"
+        name="user[location]"
+        placeholder="City, State *"
+       />
+    </label>
+    <div classe="button-containers signup-button-container">
+      <button
+        class="form-submit signup-btn-submit"
+        type="submit"
+        >Sign Up!</button>
+    </div>
+  <% end %>
+</div>

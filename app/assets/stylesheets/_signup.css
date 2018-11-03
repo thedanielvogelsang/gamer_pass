@@ -2,9 +2,57 @@
 
 .signup__button {
 	position: sticky;
-	margin: 30px;
-	top: 900px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 80%;
+	max-width: 400px;
+	padding: 10px 0 20px 0;
 
 	border-radius: 9px;
-	border: 1px solid blue;
+	background-color: #577fb3;
+	text-align: center;
+	/*border: 1px solid blue;*/
+}
+
+.signup__button:hover {
+	background-color: #a9bee2;
+}
+
+.signup__text {
+	font-size: 2.6rem;
+	color: white;
+}
+
+.signup__modal {
+	position: fixed;
+	top: 15%;
+	/*transform: translateX(50%);*/
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 20px;
+	min-width: 60%;
+	max-width: 750px;
+	height: 70%;
+	border-radius: 13px;
+	background-color: white;
+	box-shadow: 3px 3px 3px 3px rgba(35,48,71, .5);
+}
+
+@media (max-width: 750px) {
+
+	.signup__modal {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
+
+.signup__hidden {
+	display: none;
 }

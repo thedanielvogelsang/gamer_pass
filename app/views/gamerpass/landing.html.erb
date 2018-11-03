@@ -1,9 +1,4 @@
 <nav class="navigation" id="nav">
-  <div class="hamburger" id="hamburger">
-    <div class="hamburger--top top"></div>
-    <div class="hamburger--middle middle"></div>
-    <div class="hamburger--bottom bottom"></div>
-  </div><!-- HAMBURGER -->
   <div class="navigation__content">
     <a class="home" href="#top"><span>GP</span></a>
     <ul class="nav-content">
@@ -26,8 +21,19 @@
     <h2 class="selling-point">Big Claim Reinforcing Unique Value Proposition</h2>
   </div><!-- SELLING POINTS -->
 
-  <div class="signup__button">
+  <div class="signup__button" id="signup-button">
+    <span class="signup__text">Sign Up</span>
   </div><!-- SIGNUP BUTTON-->
+
+  <div class="signup__modal signup__hidden" id="signup-modal">
+    <div class="hamburger" id="hamburger">
+      <div class="hamburger--top top"></div>
+      <div class="hamburger--middle middle"></div>
+      <div class="hamburger--bottom bottom"></div>
+    </div><!-- HAMBURGER -->
+    <h3>Complete this form to receive X benefit!</h3>
+    <%= render "signupform" %>
+  </div><!-- SIGNUP MODAL -->
 
   <div class="content__main">
     <script src="https://verbingnounssincewhen.com/p/8"></script>

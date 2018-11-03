@@ -1,0 +1,214 @@
+/* line 3, /Users/thedanielvogelsang/ContractWork/GamerPass/gamer_pass/app/assets/stylesheets/_hamburger.scss */
+.hamburger--top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  transform-origin: 0 0;
+  transition: all .3s;
+}
+/* line 12, /Users/thedanielvogelsang/ContractWork/GamerPass/gamer_pass/app/assets/stylesheets/_hamburger.scss */
+.hamburger--middle {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  transition: opacity .3s;
+}
+/* line 20, /Users/thedanielvogelsang/ContractWork/GamerPass/gamer_pass/app/assets/stylesheets/_hamburger.scss */
+.hamburger--bottom {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  transform-origin: 0 100%;
+  transition: all .3s;
+}
+/* line 31, /Users/thedanielvogelsang/ContractWork/GamerPass/gamer_pass/app/assets/stylesheets/_hamburger.scss */
+.hamburger--closed .top {
+  transform: rotate(45deg) scaleX(1.25);
+}
+/* line 34, /Users/thedanielvogelsang/ContractWork/GamerPass/gamer_pass/app/assets/stylesheets/_hamburger.scss */
+.hamburger--closed .middle {
+  transition: opacity .3s;
+  opacity: 0;
+}
+/* line 38, /Users/thedanielvogelsang/ContractWork/GamerPass/gamer_pass/app/assets/stylesheets/_hamburger.scss */
+.hamburger--closed .bottom {
+  transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+}
+
+
+
+
+.navigation {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 15px 60px;
+	margin: 0 0 0 -10px;
+
+	background-color: #233047;
+	/*border: 1px solid red;*/
+}
+
+.nav-content {
+	margin: 0 90px 0px 60px;
+	list-style: none;
+}
+
+.navigation__page-link {
+	text-decoration: none;
+	color: white;
+}
+
+.navigation__page-link:hover {
+	color: #577fb3;
+}
+
+.home {
+	position: relative;
+	float: left;
+
+	color: white;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+.home:hover {
+	color: #577fb3;
+}
+
+li {
+	position: relative;
+	float: right;
+	margin: 0 20px 0 20px;
+
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+
+
+.signup__button {
+	position: sticky;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 80%;
+	max-width: 400px;
+	padding: 10px 0 20px 0;
+
+	border-radius: 9px;
+	background-color: #577fb3;
+	text-align: center;
+	/*border: 1px solid blue;*/
+}
+
+.signup__button:hover {
+	background-color: #a9bee2;
+}
+
+.signup__text {
+	font-size: 2.6rem;
+	color: white;
+}
+
+.signup__modal {
+	position: fixed;
+	top: 15%;
+	/*transform: translateX(50%);*/
+	left: 50%;
+	transform: translateX(-50%);
+
+	padding: 20px;
+	min-width: 60%;
+	max-width: 750px;
+	height: 70%;
+	border-radius: 13px;
+	background-color: white;
+	box-shadow: 3px 3px 3px 3px rgba(35,48,71, .5);
+}
+
+@media (max-width: 750px) {
+
+	.signup__modal {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+}
+
+.signup__hidden {
+	display: none;
+}
+
+
+
+* { 
+	font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
+	/* available in 200, 200i, 400, 400i, 900, 900i; */
+}
+
+p {
+	max-width: 750px;
+}
+
+
+.UVP {
+	text-align: center;
+	font-weight: 200;
+	font-size: 4rem;
+}
+
+.content__box {
+	margin: 100px 0 120px 0;
+}
+
+.content__main {
+	margin: 0 0 0 60px;
+}
+
+.example-screens__box {
+	/*display: flex;*/
+	/*border: 1px solid green;*/
+}
+
+.example-screen {
+	/*position: relative;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	max-width: 90%;
+}
+
+.selling-points__box {
+	text-align: center;
+}
+
+.selling-point {
+	font-size: 3rem;
+	font-weight: 200;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
