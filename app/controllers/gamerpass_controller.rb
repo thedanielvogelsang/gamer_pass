@@ -9,7 +9,7 @@ class GamerpassController < ApplicationController
   end
 
   def signup
-    byebug
+    render status: 202
   end
 
   private
