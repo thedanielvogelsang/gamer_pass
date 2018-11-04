@@ -1,5 +1,6 @@
 <div class="modal__formDiv">
    <%= form_tag "/user-signup", :class => "modal__form", :id => "modal__form" do %>
+   <h4>Basic Details</h4>
     <label>
       <input
         classe="signup-input"
@@ -41,7 +42,34 @@
         placeholder="City, State *"
        />
     </label>
-    <div classe="button-containers signup-button-container">
+    <div class="game__selection">
+    <h4>Which games do you go to tournaments for? (Select up to 5 from any category)</h4>
+    <label>
+      <h5>Xbox</h5>
+      <%= select_tag("xbox[]", options_from_collection_for_select(@xbox.games, :id, :name), {:class => "js-example-basic-multiple"}) %>
+    </label>
+    <label>
+      <h5>Playstation</h5>
+      <%= select_tag("playstation[]", options_from_collection_for_select(@play.games, :id, :name), {:class => "js-example-basic-multiple"}) %>
+    </label>
+    <label>
+      <h5>Nintendo</h5>
+      <%= select_tag("nintendo[]", options_from_collection_for_select(@nint.games, :id, :name), {:class => "js-example-basic-multiple"}) %>
+    </label>
+    <label>
+      <h5>PC</h5>
+      <%= select_tag("pc[]", options_from_collection_for_select(@pc.games, :id, :name), {:class => "js-example-basic-multiple"}) %>
+    </label>
+    <label>
+      <h5>Trading Cards</h5>
+      <%= select_tag("cards[]", options_from_collection_for_select(@tcg.games, :id, :name), {:class => "js-example-basic-multiple"}) %>
+    </label>
+    <label>
+      <h5>App Games</h5>
+      <%= select_tag("apps[]", options_from_collection_for_select(@appl.games, :id, :name), {:class => "js-example-basic-multiple"}) %>
+    </label>
+    </div>
+    <div class="button-containers signup-button-container">
       <button
         class="form-submit signup-btn-submit"
         type="submit"
