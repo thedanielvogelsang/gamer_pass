@@ -42,6 +42,8 @@
 	min-width: 60%;
 	max-width: 750px;
 	height: 70%;
+	box-sizing: border-box;
+	overflow: hidden;
 	border-radius: 13px;
 	background-color: white;
 	box-shadow: 3px 3px 3px 3px rgba(35,48,71, .75);

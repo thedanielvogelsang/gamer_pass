@@ -4,10 +4,24 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: 84%;
+  height: 90%;
   overflow-y: scroll;
+  box-sizing: border-box;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+h3.modal-title{
+  padding-left: 7px;
+}
+
+div.basic__details{
+  padding: 0px 20px;
+}
+
+div.game__selection{
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #modal__form{
@@ -18,26 +32,32 @@
   align-items: center;
   padding-top: 10px;
   overflow-y: scroll;
+  padding-bottom: 30px;
 }
 
 #modal__form h4{
   width: 100%;
-  text-align: center;
+  text-align: left;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
+#modal__form h4:not(.basic-detail-label){
+  padding-left: 20px;
+}
+
 #modal__form h5{
   width: 100%;
   text-align: left;
   color: white;
   font-size: 1.1em;
+  padding-left: 20px;
 }
 
 #modal__form > label{
   width: 95%;
 }
 
-#modal__form input{
+#modal__form input.signup-input{
   min-width: 100%;
   height: 50px;
   padding: 3px;
@@ -45,6 +65,7 @@
   box-sizing: border-box;
   margin-bottom: 2px;
   font-size: 1.1em;
+  border-radius: 5px;
 }
 
 select{
@@ -72,16 +93,28 @@ button.signup-btn-submit{
   font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 12px;
 }
+span.select2-dropdown--below{
+  margin-left: 100px;
+  max-width: 40vw;
+}
 li.select2-search.select2-search--inline{
-  width: 200px;
+  width: 300px;
 }
 span.select2-container .select2-selection--multiple {
     height: 70px;
     overflow-y: scroll;
-    margin-left: 14px;
+    margin-left: 20px;
+}
+span.select2-selection__clear{
+  font-size: 1.2em;
+}
+ul.select2-selection__rendered{
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }
 input.select2-search__field{
-  width: 200px;
+  width: 90% !important;
+  font-size: 70% !important;
 }
 input.select2-search__field::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 16px;
@@ -94,4 +127,10 @@ input.select2-search__field:-ms-input-placeholder { /* IE 10+ */
 }
 input.select2-search__field:-moz-placeholder { /* Firefox 18- */
   font-size: 16px;
+}
+@media (max-width: 600px){
+  span.select2-dropdown--below{
+    margin-left: 20px;
+    max-width: 50vw;
+  }
 }
