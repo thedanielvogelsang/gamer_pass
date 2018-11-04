@@ -9,8 +9,7 @@ class GamerpassController < ApplicationController
   end
 
   def signup
-    render status: 202
-    redirect_to '/'
+    redirect_to "/", status: 202
   end
 
   private
