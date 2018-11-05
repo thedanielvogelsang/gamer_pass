@@ -1,0 +1,49 @@
+
+
+
+.contact__box {
+	display: flex;
+	flex-direction: column;
+
+	margin: 20px -10px -40px -10px;
+	padding: 60px 0 0 0px;
+
+	text-align: center;
+	background-color: #a9bee2;
+}
+
+.contact__top-spacer {
+	height: 30px;
+}
+
+.contact__bus-info {
+	margin-top: -15px;
+}
+
+.contact__social-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.contact__social-bubble {
+	margin: 12px;
+	height: 32px;
+	width: 32px;
+	border-radius: 15px;
+
+	background-color: #5a5a66;
+}
+
+.contact__social-bubble:hover {
+	background-color: #d6e0f2;
+}
+
+.contact__social-icon {
+	margin: 8px;
+	height: 16px;
+}
+
+.contact__bottom-space {
+	height: 200px;
+}

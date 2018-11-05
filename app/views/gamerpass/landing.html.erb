@@ -10,10 +10,9 @@
 
 <div id="top"></div>
 <div class="content__box">
-
-  <h1 class="UVP">All Your Tournaments in One Spot</h1>
+  <h1 class="UVP">All&nbsp;Your&nbsp;Tournaments in&nbsp;One&nbsp;Spot</h1>
   <div class="example-screens__box">
-    <%= image_tag "example_screens.png", :class => "example-screen"%>
+    <%= image_tag "example_screens.png", :class => "example-screen",  :alt => "application example images"%>
   </div><!-- EXAMPLE SCREENS -->
   <div class="selling-points__box">
     <h2 class="selling-point">Key Detail about Gamer Pass</h2>
@@ -22,7 +21,8 @@
   </div><!-- SELLING POINTS -->
 
   <div class="signup__button" id="signup-button">
-    <span class="signup__text">Sign Up</span>
+    <span class="signup__promise">Never Miss a Tournament</span><br>
+    <span class="signup__text">Sign Up Now</span>
   </div><!-- SIGNUP BUTTON-->
 
   <div class="signup__backdrop signup__hidden" id="modal-backdrop"></div>
@@ -36,17 +36,37 @@
   </div><!-- SIGNUP MODAL -->
 
   <div class="content__main">
-    <script src="https://verbingnounssincewhen.com/p/8"></script>
-    <h2 id="About">About</h2>
-    <script src="https://verbingnounssincewhen.com/p/10"></script>
-    <h2 id="Contact">Contact</h2>
-    <div class="contact__box">
-      <span class="contact__bus-info">Gamer Pass</span><br>
-      <span class="contact__bus-info">P.O. Box 4567</span><br>
-      <span class="contact__bus-info">Chicago, IL </span><br>
-      <span class="contact__bus-info">60601</span><br>
-      <span class="contact__bus-info">[social media links, maybe]</span><br>
-    </div>
-
+    <p>
+      Gamer Pass is an opportunity to engage with your gaming community of choice in exactly the way in which these paragraphs will describe with fervent, desire building, intensity.
+    </p>
+    <script src="https://verbingnounssincewhen.com/p/2"></script>
+    <div class="medium-space"></div>
+    <h2 class="target-link" id="About">About</h2>
+    <p>Once upon a time a problem existed, this paragraph might describe what that problem was and how awful that problem was and how Gamer Pass founder Joseph Fattal found others suffering under the terrible lack of Gamer Pass. The succeeding paragraph may describe how Joe has been solving this problem diligently and without the aid of a sweet database. Maybe then, we'll hear about some of the remarkable success which have been had, just to secure that claim to value. A concluding paragraph will explain the application which is to come and the imperative nature of signing up now to be kept abreast of all developments and gaming opportunities.
+    <script src="https://verbingnounssincewhen.com/p/3"></script>
+    <div class="medium-space"></div>
   </div><!-- CONTENT MAIN -->
-</div><!-- DUMMY BODY -->
+
+  <div id="Contact"></div>
+
+  <div class="contact__box">
+    <h2 id="Contact">Contact</h2>
+    <div class="contact__top-spacer"></div>
+    <span class="contact__bus-info">Gamer Pass</span><br>
+    <span class="contact__bus-info">P.O. Box 4567</span><br>
+    <span class="contact__bus-info">Chicago, IL </span><br>
+    <span class="contact__bus-info">60601</span><br>
+
+    <div class="contact__social-box">
+      <div class="contact__social-bubble">
+        <a href="https://www.facebook.com/" target="_social"><%= image_tag "facebook.svg", :class => "contact__social-icon", :alt => "facebook icon"%></a>
+      </div>
+      <div class="contact__social-bubble">
+        <a href="https://twitter.com/" target="_social"><%= image_tag "twitter.svg", :class => "contact__social-icon", :alt => "twitter icon"%></a>
+      </div><!-- SOCIAL BUBBLE -->
+    </div><!-- CONTACT SOCIAL BOX -->
+
+    <div class="contact__bottom-space"></div>
+  </div><!-- CONTACT BOX -->
+
+</div><!-- CONTENT BOX -->
