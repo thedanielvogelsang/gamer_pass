@@ -104,15 +104,24 @@ li.select2-search.select2-search--inline{
 }
 span.select2-container .select2-selection--multiple {
     height: 70px;
-    overflow-y: scroll;
+    overflow-y: hidden;
     margin-left: 20px;
 }
 span.select2-selection__clear{
   font-size: 1.2em;
 }
 ul.select2-selection__rendered{
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
+  padding-top: 5px !important;
+  padding-bottom: 15px !important;
+  height: 70px;
+  overflow-y: scroll !important;
+}
+li.select2-selection__choice{
+  min-width: 200px;
+  z-index: 1;
+}
+ul.select2-selection__rendered > li.select2-search--inline:first-child{
+  margin-top: 15px;
 }
 input.select2-search__field{
   width: 90% !important;

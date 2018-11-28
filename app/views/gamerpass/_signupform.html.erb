@@ -45,7 +45,7 @@
       </label>
     </div>
     <div class="game__selection">
-    <h4>Which games do you go to tournaments for?</h4>
+    <h4>What are your favorite games?</h4>
     <label>
       <h5>Xbox</h5>
       <%= select_tag("xbox[]", options_from_collection_for_select(@xbox.games, :id, :name), {:class => "js-example-basic-multiple", :include_blank => '', :multiple => true}) %>
