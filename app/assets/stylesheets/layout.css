@@ -66,7 +66,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	margin: 20px 6px;
+	margin: 20px 0px;
 }
  .splash {
  	width: 580px;
@@ -103,12 +103,6 @@ hr.first{
 }
 hr.second{
 	margin-top: 20px
-}
-@media(max-width: 1280px){
-	.outer-box{
-		padding-right: 40px;
-	}
-
 }
 @media(max-width: 1080px){
 	.outer-box{
